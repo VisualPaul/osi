@@ -1,7 +1,7 @@
 #/usr/bin/env bash
 #if encoding is different from UTF-8 it may not work... Nevermind
 
-for i in a b c; do
+for i in a b c d; do
     mkdir $i
     cd $i
     xargs -d '\n' -a ../$i.files touch
