@@ -11,7 +11,7 @@ for i in a b c d; do
         echo -e "Test $i: \e[31mFAILED\e[39m"
         continue
     fi
-    if ls $i | diff - $i.result; then
+    if ls $i | diff -b - $i.result; then
         echo -e "Test $i: \e[32mPASSED\e[39m"
     else
         echo -e "Test $i: \e[31mFAILED\e[39m"
